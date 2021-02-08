@@ -63,7 +63,10 @@ export function SwapBondTabs({ active }: { active: 'swap' | 'bond' }) {
       <StyledNavLink id={`swap-nav-link`} to={' '} isActive={() => active === 'swap'}>
         {t('swap')}
       </StyledNavLink>
-      <StyledNavLink id={`pool-nav-link`} to={'/pool'} isActive={() => active === 'bond'}>
+      <StyledNavLink id={`bond-nav-link`} to={' '} isActive={() => active === 'bond'}>
+        {t('swap')}
+      </StyledNavLink>
+      <StyledNavLink id={`pool-nav-link`} to={'/pool'} isActive={() => active === 'pool'}>
         {t('bond')}
       </StyledNavLink>
     </Tabs>
