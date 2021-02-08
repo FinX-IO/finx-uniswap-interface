@@ -60,9 +60,6 @@ export function SwapBondTabs({ active }: { active: 'swap' | 'bond' }) {
   const { t } = useTranslation()
   return (
     <Tabs style={{ marginBottom: '20px', display: 'none' }}>
-      <StyledNavLink id={`swap-nav-link`} to={' '} isActive={() => active === 'swap'}>
-        {t('swap')}
-      </StyledNavLink>
       <StyledNavLink id={`bond-nav-link`} to={' '} isActive={() => active === 'bond'}>
         {t('swap')}
       </StyledNavLink>
