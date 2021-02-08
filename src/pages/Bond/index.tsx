@@ -133,11 +133,16 @@ export default function Pool() {
           <CardSection>
             <AutoColumn gap="md">
               <RowBetween>
-                <TYPE.white fontWeight={600}>Liquidity provider rewards</TYPE.white>
+                <TYPE.white fontWeight={600}>Decentralized Bond Market</TYPE.white>
               </RowBetween>
               <RowBetween>
                 <TYPE.white fontSize={14}>
-                  {`Liquidity providers earn a 0.3% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.`}
+                  {`Liquidity providers earn a 0.3% fee on all bond liquidity repayments proportional to their share of the Liquidity staked in the pool. Bond Repayments are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.`}
+                </TYPE.white>
+              </RowBetween>
+              <RowBetween>
+                <TYPE.white fontSize={14}>
+                  {`Service providers are companies such as Ratings Agencies, Insurance Providers, and other institutions which provide services related to individual bonds. Service Providers earn a 0.3% fee on all bond service fee payments proportional to their share of the amount of FINX Tokens staked in the pool. Bond Payments are added to the pool, accrue in real time and are claimed when the bond is discharged. FINX Tokens are sold by Service Providers to Bond Issuers, earn interest when staked in a bond and can then be resold when the tokens are returned.`}
                 </TYPE.white>
               </RowBetween>
               <ExternalLink
@@ -145,7 +150,7 @@ export default function Pool() {
                 target="_blank"
                 href="https://uniswap.org/docs/v2/core-concepts/pools/"
               >
-                <TYPE.white fontSize={14}>Read more about providing liquidity</TYPE.white>
+                <TYPE.white fontSize={14}>Read more about providing liquidity to bonds</TYPE.white>
               </ExternalLink>
             </AutoColumn>
           </CardSection>
