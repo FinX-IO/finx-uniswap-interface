@@ -2,13 +2,20 @@
   <defs>
     <style>
       .cls-1 {
-        font-size: 36px;
-        fill: #fdfbf6;
+        font-size: 48px;
+        fill: #fff;
         text-anchor: middle;
         font-family: "Roboto Slab";
+      }
+
+      .cls-2 {
         font-weight: 300;
+      }
+
+      .cls-3 {
+        font-family: Impact;
       }
     </style>
   </defs>
-  <text id="FINX_BONDS" data-name="FINX BONDS" class="cls-1" x="62.862" y="52.994"><tspan x="62.862">FINX</tspan><tspan x="62.862" dy="43.2">BONDS</tspan></text>
+  <text id="FINX_BONDS" data-name="FINX BONDS" class="cls-1" x="63.015" y="53.984"><tspan class="cls-2" x="63.015">FINX</tspan><tspan class="cls-3" x="63.015" dy="57.6">BONDS</tspan></text>
 </svg>
