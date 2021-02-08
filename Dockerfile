@@ -7,7 +7,7 @@ WORKDIR /finx
 # Copy all files from current directory to working dir in image
 COPY . .
 # install node modules and build assets
-RUN yarn install && yarn buildd
+RUN yarn install && yarn build
 # install PORTIS
 RUN npm install web3 @portis/web3
 RUN npx browserslist@latest --update-db
