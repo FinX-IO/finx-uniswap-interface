@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 36px;
+        fill: #0b0700;
+        text-anchor: middle;
+        font-family: "Roboto Slab";
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <text id="FINX_BONDS" data-name="FINX BONDS" class="cls-1" x="62.862" y="52.994"><tspan x="62.862">FINX</tspan><tspan x="62.862" dy="43.2">BONDS</tspan></text>
+</svg>

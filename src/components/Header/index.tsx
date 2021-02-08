@@ -7,8 +7,10 @@ import { useTranslation } from 'react-i18next'
 
 import styled from 'styled-components'
 
-import Logo from '../../assets/svg/logo.svg'
-import LogoDark from '../../assets/svg/logo_white.svg'
+// import Logo from '../../assets/svg/logo.svg'
+// import LogoDark from '../../assets/svg/logo_white.svg'
+import Logo from '../../assets/svg/finx_logo.svg'
+import LogoDark from '../../assets/svg/finx_logo_white.svg'
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances, useAggregateUniBalance } from '../../state/wallet/hooks'
@@ -329,21 +331,21 @@ export default function Header() {
           </UniIcon>
         </Title>
         <HeaderLinks>
+            <StyledNavLink
+              id={`bond-nav-link`}
+              to={'/bond'}
+              /*{ isActive={(match, { pathname }) =>
+                Boolean(match) ||
+                pathname.startsWith('/add') ||
+                pathname.startsWith('/remove') ||
+                pathname.startsWith('/create') ||
+                pathname.startsWith('/find')
+              }*/
+            >
+              {t('bond')}
+            </StyledNavLink>
           <StyledNavLink id={`swap-nav-link`} to={'/swap'}>
             {t('swap')}
-          </StyledNavLink>
-          <StyledNavLink
-            id={`bond-nav-link`}
-            to={'/bond'}
-            /*{ isActive={(match, { pathname }) =>
-              Boolean(match) ||
-              pathname.startsWith('/add') ||
-              pathname.startsWith('/remove') ||
-              pathname.startsWith('/create') ||
-              pathname.startsWith('/find')
-            }*/
-          >
-            {t('bond')}
           </StyledNavLink>
           <StyledNavLink
             id={`pool-nav-link`}
