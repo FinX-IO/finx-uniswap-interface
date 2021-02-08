@@ -126,7 +126,7 @@ export default function Pool() {
   return (
     <>
       <PageWrapper>
-        <SwapPoolTabs active={'pool'} />
+        <SwapPoolTabs active={'home'} />
         <VoteCard>
             <CardSection>
               <AutoColumn gap="md">
