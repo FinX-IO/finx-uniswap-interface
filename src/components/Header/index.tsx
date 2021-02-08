@@ -335,13 +335,13 @@ export default function Header() {
           <StyledNavLink
             id={`bond-nav-link`}
             to={'/bond'}
-            {/* isActive={(match, { pathname }) =>
+            /*{ isActive={(match, { pathname }) =>
               Boolean(match) ||
               pathname.startsWith('/add') ||
               pathname.startsWith('/remove') ||
               pathname.startsWith('/create') ||
               pathname.startsWith('/find')
-            } */}
+            }*/
           >
             {t('bond')}
           </StyledNavLink>
