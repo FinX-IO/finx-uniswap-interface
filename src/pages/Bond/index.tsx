@@ -128,13 +128,24 @@ export default function Pool() {
       <PageWrapper>
         <SwapPoolTabs active={'pool'} />
         <VoteCard>
+            <CardSection>
+              <AutoColumn gap="md">
+                <RowBetween>
+                  <TYPE.white fontWeight={600}>Decentralized Bond Market</TYPE.white>
+                </RowBetween>
+                <RowBetween>
+                  <TYPE.white fontSize={14}>
+                    {`FINX BONDS is a Decentralized Exchange of Corporate Debt. The FINX DeFi protocol allows anyone access to the Corporate Finance Market, and any Corporation can gain instant access to ultra-large low-cost capital pools which are always liquid, 24x7.`}
+                  </TYPE.white>
+                </RowBetween>
+              </AutoColumn>
+            </CardSection>
+        </VoteCard>
+        <VoteCard>
           <CardBGImage />
           <CardNoise />
           <CardSection>
             <AutoColumn gap="md">
-              <RowBetween>
-                <TYPE.white fontWeight={600}>Decentralized Bond Market</TYPE.white>
-              </RowBetween>
               <RowBetween>
                 <TYPE.white fontSize={14}>
                   {`Liquidity providers earn a 0.3% fee on all bond liquidity repayments proportional to their share of the Liquidity staked in the pool. Bond Repayments are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.`}
@@ -168,7 +179,10 @@ export default function Pool() {
               </HideSmall>
               <ButtonRow>
                 <ResponsiveButtonSecondary as={Link} padding="6px 8px" to="/create/ETH">
-                  Create a pair
+                  Provide Services to Bonds
+                </ResponsiveButtonSecondary>
+                <ResponsiveButtonSecondary as={Link} padding="6px 8px" to="/create/ETH">
+                  Issue a Bond
                 </ResponsiveButtonSecondary>
                 <ResponsiveButtonPrimary
                   id="join-pool-button"
@@ -223,14 +237,14 @@ export default function Pool() {
             ) : (
               <EmptyProposals>
                 <TYPE.body color={theme.text3} textAlign="center">
-                  No liquidity found.
+                  No bonds found.
                 </TYPE.body>
               </EmptyProposals>
             )}
 
             <AutoColumn justify={'center'} gap="md">
               <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
-                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : "Don't see a pool you joined?"}{' '}
+                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : "Don't see a bond pool you joined?"}{' '}
                 <StyledInternalLink id="import-pool-link" to={hasV1Liquidity ? '/migrate/v1' : '/find'}>
                   {hasV1Liquidity ? 'Migrate now.' : 'Import it.'}
                 </StyledInternalLink>
