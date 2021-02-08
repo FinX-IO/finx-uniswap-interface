@@ -7,7 +7,10 @@ WORKDIR /finx
 # Copy all files from current directory to working dir in image
 COPY . .
 # install node modules and build assets
-RUN yarn install && yarn build
+RUN yarn install && yarn buildd
+# install PORTIS
+RUN npm install web3 @portis/web3
+RUN npx browserslist@latest --update-db
 # nginx state for serving content
 FROM nginx:alpine
 # Set working directory to nginx asset directory

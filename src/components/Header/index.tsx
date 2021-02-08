@@ -333,6 +333,19 @@ export default function Header() {
             {t('swap')}
           </StyledNavLink>
           <StyledNavLink
+            id={`bond-nav-link`}
+            to={'/bond'}
+            isActive={(match, { pathname }) =>
+              Boolean(match) ||
+              pathname.startsWith('/add') ||
+              pathname.startsWith('/remove') ||
+              pathname.startsWith('/create') ||
+              pathname.startsWith('/find')
+            }
+          >
+            {t('bond')}
+          </StyledNavLink>
+          <StyledNavLink
             id={`pool-nav-link`}
             to={'/pool'}
             isActive={(match, { pathname }) =>
