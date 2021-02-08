@@ -333,7 +333,7 @@ export default function Header() {
         <HeaderLinks>
             <StyledNavLink
               id={`bond-nav-link`}
-              to={'/bond'}
+              to={'/home'}
               /*{ isActive={(match, { pathname }) =>
                 Boolean(match) ||
                 pathname.startsWith('/add') ||
