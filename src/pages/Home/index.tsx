@@ -27,7 +27,6 @@ const VoteCard = styled(DataCard)`
 `
 
 export default function Pool() {
-  const theme = useContext(ThemeContext)
   const { account } = useActiveWeb3React()
 
   // fetch the user's balances of all tracked V2 LP tokens
