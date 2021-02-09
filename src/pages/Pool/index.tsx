@@ -163,7 +163,10 @@ export default function Pool() {
               </HideSmall>
               <ButtonRow>
                 <ResponsiveButtonSecondary as={Link} padding="6px 8px" to="/create/ETH">
-                  Create a pair
+                  Provide Services to Bonds
+                </ResponsiveButtonSecondary>
+                <ResponsiveButtonSecondary as={Link} padding="6px 8px" to="/create/ETH">
+                  Issue a Bond
                 </ResponsiveButtonSecondary>
                 <ResponsiveButtonPrimary
                   id="join-pool-button"
@@ -218,14 +221,14 @@ export default function Pool() {
             ) : (
               <EmptyProposals>
                 <TYPE.body color={theme.text3} textAlign="center">
-                  No liquidity found.
+                  No bonds found.
                 </TYPE.body>
               </EmptyProposals>
             )}
 
             <AutoColumn justify={'center'} gap="md">
               <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
-                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : "Don't see a pool you joined?"}{' '}
+                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : "Don't see a bond pool you joined?"}{' '}
                 <StyledInternalLink id="import-pool-link" to={hasV1Liquidity ? '/migrate/v1' : '/find'}>
                   {hasV1Liquidity ? 'Migrate now.' : 'Import it.'}
                 </StyledInternalLink>
