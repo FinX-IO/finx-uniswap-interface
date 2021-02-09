@@ -54,7 +54,7 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
   const unclaimedUni = useTokenBalance(useMerkleDistributorContract()?.address, uni)
   const circulation: TokenAmount | undefined = useMemo(
     () =>
-      blockTimestamp && uni && chainId === ChainId.MAINNET
+      blockTimestamp && uni && chainId === ChainId.ROPSTEN
         ? computeUniCirculation(uni, blockTimestamp, unclaimedUni)
         : totalSupply,
     [blockTimestamp, chainId, totalSupply, unclaimedUni, uni]
@@ -105,11 +105,11 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
         <CardSection gap="sm">
           <AutoColumn gap="md">
             <RowBetween>
-              <TYPE.white color="white">UNI price:</TYPE.white>
+              <TYPE.white color="white">FINX price:</TYPE.white>
               <TYPE.white color="white">${uniPrice?.toFixed(2) ?? '-'}</TYPE.white>
             </RowBetween>
             <RowBetween>
-              <TYPE.white color="white">UNI in circulation:</TYPE.white>
+              <TYPE.white color="white">FINX in circulation:</TYPE.white>
               <TYPE.white color="white">{circulation?.toFixed(0, { groupSeparator: ',' })}</TYPE.white>
             </RowBetween>
             <RowBetween>
@@ -117,7 +117,7 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
               <TYPE.white color="white">{totalSupply?.toFixed(0, { groupSeparator: ',' })}</TYPE.white>
             </RowBetween>
             {uni && uni.chainId === ChainId.MAINNET ? (
-              <ExternalLink href={`https://uniswap.info/token/${uni.address}`}>View UNI Analytics</ExternalLink>
+              <ExternalLink href={`https://uniswap.info/token/${uni.address}`}>View FINX Analytics</ExternalLink>
             ) : null}
           </AutoColumn>
         </CardSection>
