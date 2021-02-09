@@ -1,20 +1,10 @@
-import React, { useMemo } from 'react'
 import styled from 'styled-components'
-import { Pair, JSBI } from '@uniswap/sdk'
-import { SwapPoolTabs } from '../../components/NavigationTabs'
 
-import { useUserHasLiquidityInAllTokens } from '../../data/V1'
-import { useTokenBalancesWithLoadingIndicator } from '../../state/wallet/hooks'
 import { ExternalLink, TYPE } from '../../theme'
 import { RowBetween } from '../../components/Row'
 import { AutoColumn } from '../../components/Column'
 
-import { useActiveWeb3React } from '../../hooks'
-import { usePairs } from '../../data/Reserves'
-import { toV2LiquidityToken, useTrackedTokenPairs } from '../../state/user/hooks'
 import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earn/styled'
-import { useStakingInfo } from '../../state/stake/hooks'
-import { BIG_INT_ZERO } from '../../constants'
 
 const PageWrapper = styled(AutoColumn)`
   max-width: 640px;
