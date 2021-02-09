@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import styled from 'styled-components'
 import { Pair, JSBI } from '@uniswap/sdk'
 import { SwapPoolTabs } from '../../components/NavigationTabs'
 
