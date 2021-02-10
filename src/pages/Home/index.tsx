@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { ExternalLink, TYPE } from '../../theme'
 import { RowBetween } from '../../components/Row'
 import { AutoColumn } from '../../components/Column'
+import { SwapPoolTabs } from '../../components/NavigationTabs'
 
 import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earn/styled'
 
@@ -16,6 +17,7 @@ const VoteCard = styled(DataCard)`
   overflow: hidden;
 `
   // remove any pairs that also are included in pairs with stake in mining pool
+export default function Home() {
 
   return (
     <>
@@ -65,4 +67,3 @@ const VoteCard = styled(DataCard)`
       </PageWrapper>
     </>
   )
-}
