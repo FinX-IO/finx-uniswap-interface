@@ -1,6 +1,6 @@
 {
   "name": "@uniswap/interface",
-  "description": "FINX Bond Exchange",
+  "description": "FINX Credit DEX",
   "homepage": ".",
   "private": true,
   "devDependencies": {
@@ -93,7 +93,7 @@
     "@walletconnect/web3-provider": "1.1.1-alpha.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "export PORT=80 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
